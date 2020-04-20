@@ -13,7 +13,7 @@ class Anagram
     list_of_words.map do |word|
       word if word.split("").sort == @word.split("").sort
     #binding.pry
-    end.flatten
+    end.compact
     #output
   end
   
